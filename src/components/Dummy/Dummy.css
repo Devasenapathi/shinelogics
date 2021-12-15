@@ -3,18 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&family=PT+Sans&family=Petemoss&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&family=PT+Sans&family=Petemoss&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&family=PT+Sans&family=Petemoss&family=Roboto:wght@100&display=swap');
-.header5 {
+.header {
     font-size: 22px;
     display: flex;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color:white;
+    /* background-color: rgb(195, 223, 235); */
     padding: 1px 0 1px 0;
     top: 0;
     position: sticky; /* the header dont affect when you are scrolling*/
     z-index: 2000;
 }
-
+.header__left{
+    flex: 0.05;
+}
 
 /* .header__left  h1{
      text-align: center;
@@ -35,10 +37,10 @@
 }
 
 .header__right{
-
+    display: flex;
+    flex: .95;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 25%;
 
 }
 .header__right h4{
@@ -47,8 +49,6 @@
     cursor: pointer;
     padding: 20px 0;
     letter-spacing: 1px;
-    float: right;
-    
 }
 /* .header__right  h4:hover {
     

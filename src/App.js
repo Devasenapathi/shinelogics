@@ -2,36 +2,76 @@ import './App.css';
 import Company from './components/Company/Company';
 import { Header } from './components/Header';
 import TopContainer from './components/TopContainer/TopContainer';
-import Service from './components/Service/Service';
-import Product from './components/Product/Product';
-import About from './components/About/About';
 import Carrers from './components/Carrers/Carrers';
-import Consultant from './components/Consultant/Consultant';
-//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+//import Consultant from './components/Consultant/Consultant';
+import Servicess from './components/Servicess/Servicess';
+import Erp from './components/Erp/Erp';
+import Ecommerce from './components/Ecommerce/Ecommerce';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 //import Experience from './components/Experience/Experience';
 import Form from './components/Form/Form';
-import Experience from './components/Experience/Experience';
+//import Experience from './components/Experience/Experience';
+
+import Contact from './components/Contact/Contact';
+import Address from './components/Address/Address';
+import Dummy from './components/Dummy/Dummy'
+import Service from './components/Service/Service';
+
+
 function App() {
   return (
+    <Router>
     <div className="App">
-      <Header />
-      <TopContainer />
-      <Company />
-      <Service />
-      <Product />
-      <Carrers />
-     {/*      <Router>
-            <Routes>
-          <Route path="/apply" component={Form} />
-          <Route path="/join" component={Experience} />
+          <Address/>
+          
+      <div className='content'>
+        <Switch>
+          <Route exact path='/'>
+            <Header />
+            <TopContainer />
+            <Company />
+            <Servicess/>
+            <Carrers />
+            <Service/>
+            <Contact />             
+          </Route> 
+        
+          <Route path="/apply">
+            <Dummy/>
+            <Form/>
+            <Contact/> 
+          </Route>
+          <Route path="/join">
+            <Dummy  />
+            <Form/>
+            <Contact /> 
+          </Route>
+          <Route path="/erp">
+            <Dummy  />
+            <Erp/>
+            <Contact /> 
+          </Route>
+          <Route path="/ecommerce">
+            <Dummy  />
+            <Ecommerce/>
+            <Contact /> 
+          </Route>
+        </Switch>
+      
+     
+     {/*  <Router>
+         <Routes>
+         
+          <Route path="/join" component={Experience} /> 
           </Routes>
-     </Router>
-       */}
-       <Form/>
-       <Experience/>
-      <Consultant />
-      <About />
+     </Router> */}
+       
+      {/* <Experience/> */}
+      {/* <Consultant /> */}
+      </div>
+      
     </div>
+    </Router>
   );
 }
 

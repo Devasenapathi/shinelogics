@@ -2,13 +2,13 @@ import React from 'react'
 //import {Section} from 'react-scroll'
 //import { Element } from 'react-scroll'
 import "./Service.css"
-import img from "../../assets/Avio.png"
+/* import img from "../../assets/Avio.png"
 import img2 from "../../assets/whizly.webp"
 import mobile from "../../assets/mobile2.jpg"
 import web from "../../assets/web.jpg"
 import software from "../../assets/software.jpg"
 import erps from "../../assets/erps.jpg"
-import ecom from "../../assets/ecom.jpg"
+import ecom from "../../assets/ecom.jpg" */
 //import mobile1 from "../../assets/mobi1.jpg"
 
 
@@ -16,7 +16,7 @@ import ecom from "../../assets/ecom.jpg"
 const Service = () => {
     return (
        
-        <div className="servicecontainer">
+/*         <div className="servicecontainer">
             <div className="servicecontainer__header">
                 <h2>our services</h2>
             </div>
@@ -49,7 +49,7 @@ const Service = () => {
             <a href="/">read more..</a></div>
             </div>
             <br/><br/>
-            {/*  second line */}
+            { second line }
             <div className="servicecontainer__space2">
             <div className="servicecontainer__content12">
                 <div className="servicecontainer__content1content1">
@@ -87,6 +87,71 @@ const Service = () => {
                 <div className="secondcontainer1__img1">
                     <img src={img2} alt=""></img>
                 </div>
+            </div>
+            </div>
+        </div> */
+       /*  <div className='body'>
+        <div class="container">
+
+       
+
+        <div class="card">
+
+            <div class="slide slide1">
+
+                <div class="content">
+
+                    <div class="icon">
+
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide slide2">
+
+                <div class="content">
+
+                    <h3>
+
+                        Hello there!
+
+                    </h3>
+
+                    <p>Trust yourself and keep going.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    </div> */
+
+    <div>
+        <div className='service_background'>
+        
+        <   div class="card1">
+                800 <br></br>
+                Work
+            </div>
+            <div class="card2">
+                220  <br></br>
+                Tasks
+            </div>
+            <div class="card3">
+                4555  <br></br>
+                Demo
+            </div>
+            <div class="card4">
+                125  <br></br>
+                clients
             </div>
             </div>
         </div>

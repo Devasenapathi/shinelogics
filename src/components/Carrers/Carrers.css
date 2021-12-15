@@ -3,7 +3,6 @@
 .carrerscontainer{
     align-items: center;
     justify-content: center;
-    margin: 100px 0 0 0;
     background: url("../../assets/back1.jpg");
     height: 87vh;
     box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
@@ -149,7 +148,7 @@ button:hover{
 
 .carrcontainer3{
     display: flex;
-    margin: 200px 0 0 0;
+    margin: 100px 0 0 0;
   }
   
   .carrcontainer3__content{

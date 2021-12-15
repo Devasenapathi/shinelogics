@@ -1,5 +1,5 @@
 import React from 'react'
-//import { Element } from 'react-scroll'
+import { Element } from 'react-scroll'
 //import {Section} from 'react-scroll'
 import newcarrers from "../../assets/66712.jpg"
 import carnew from "../../assets/coding.jpg"
@@ -25,7 +25,7 @@ import "./Carrers.css"
 //import Form from '../Form/Form'
 const Carrers = () => {
     return (
-        <div>
+        <Element id="carrers">
             {/* <div className="carrerscontainer">
                 <div className="carrerscontainer__head">
                 <p>We can offer you a whole new world</p>
@@ -94,14 +94,14 @@ const Carrers = () => {
                        <h4>Candidate-Apply for job</h4>
                      
                      
-                      <button>Apply</button>
+                      <a href='/apply'><button> Apply </button></a>
                        
                     </div>
                     <div className="carrcontainer3card__2">
                        <img src={carnew1} alt="/"></img>
                        <h4>Clients-Hire Developers</h4>
                        
-                       <button>Join</button>
+                      <a href='/join'> <button>Join</button> </a>
                        
                     </div>
                     <div className="carrcontainer3card__3">
@@ -111,7 +111,7 @@ const Carrers = () => {
                        
                     </div>
                 </div>
-        </div>
+        </Element>
     )
 }
 
